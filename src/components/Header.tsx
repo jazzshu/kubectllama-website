@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Github, Menu, X } from 'lucide-react';
+import MyImage from '../assets/logo-nobg.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,11 +43,16 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <motion.div
-            className="w-10 h-10 flex items-center justify-center rounded-lg bg-kubectlLama-blue text-white"
+            className="w-10 h-10 flex items-center justify-center rounded-lg text-white"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="font-mono font-bold text-lg">K</span>
+            {/* <span className="font-mono font-bold text-lg">K</span> */}
+            <img 
+              src={MyImage}
+              alt="K logo"
+              className="w-6 h-6" // Adjust size as needed
+            />
           </motion.div>
           <span className="font-semibold text-lg md:text-xl">kubectllama</span>
         </a>
