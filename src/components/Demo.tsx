@@ -155,7 +155,11 @@ const Demo = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-center"
       >
-        <a href="#installation" className="btn-primary inline-flex items-center">
+        <a href="#installation" onClick={(e) => {
+          e.preventDefault();
+          const element = document.getElementById("installation");
+          if (element) element.scrollIntoView({ behavior: "smooth" });
+        }} className="btn-primary inline-flex items-center">
           Get Started <ArrowRight className="ml-2 h-4 w-4" />
         </a>
       </motion.div>
