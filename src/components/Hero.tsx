@@ -39,7 +39,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-kubectlLama-gray mb-10 max-w-3xl"
           >
-            KubectlLama leverages Ollama to convert your natural language requests into precise kubectl commands,
+            Kubectllama leverages Ollama to convert your natural language requests into precise kubectl commands,
             making Kubernetes management simpler and more accessible.
           </motion.p>
           
@@ -87,7 +87,7 @@ const Hero = () => {
                 className="flex items-start mb-4"
               >
                 <span className="text-kubectlLama-teal mr-2">$</span>
-                <span>kubectl-lama "list all pods that are not running"</span>
+                <span>kubectllama "list all pods that are not running"</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -105,7 +105,7 @@ const Hero = () => {
               >
                 <p className="mb-2 text-kubectlLama-teal">Found command:</p>
                 <pre className="bg-kubectlLama-dark/50 p-2 rounded overflow-x-auto text-white mb-2">
-                  kubectl get pods --field-selector=status.phase!=Running --all-namespaces
+                  kubectl get pods --field-selector=status.phase != Running --all-namespaces
                 </pre>
                 <p>This will list all pods across all namespaces that are not in the "Running" state.</p>
                 <p className="mt-2">Execute this command? [Y/n] <span className="animate-pulse">_</span></p>

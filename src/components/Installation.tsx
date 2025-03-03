@@ -16,7 +16,7 @@ const Installation = () => {
     {
       id: 'source',
       title: 'From Source',
-      command: 'git clone https://github.com/jazzshu/kubectllama.git\ncd kubectllama\ngo build -o kubectl-lama main.go\nsudo mv kubectl-lama /usr/local/bin/',
+      command: 'git clone https://github.com/jazzshu/kubectllama.git\ncd kubectllama\ngo build -o kubectllama main.go\nsudo mv kubectllama /usr/local/bin/',
       description: 'Clone the repository and build from source for the latest version.'
     }
   ];
@@ -46,7 +46,7 @@ const Installation = () => {
     {
       title: 'Start using kubectllama',
       description: 'Run the command with your natural language query:',
-      command: 'kubectl-lama "list all pods that are not running"'
+      command: 'kubectllama "list all pods that are not running"'
     }
   ];
 

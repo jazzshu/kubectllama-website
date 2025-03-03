@@ -81,7 +81,7 @@ const Features = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-kubectlLama-gray"
         >
-          KubectlLama simplifies Kubernetes management by translating natural language into kubectl commands,
+          Kubectllama simplifies Kubernetes management by translating natural language into kubectl commands,
           making it easier for both beginners and experts.
         </motion.p>
       </div>

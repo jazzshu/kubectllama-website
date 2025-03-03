@@ -132,7 +132,7 @@ const Demo = () => {
             >
               <div className="flex items-start mb-4">
                 <span className="text-kubectlLama-blue mr-2">$</span>
-                <span className="font-mono">kubectl-lama "{demoQueries[activeDemo].query}"</span>
+                <span className="font-mono">kubectllama "{demoQueries[activeDemo].query}"</span>
               </div>
               <div className="pl-4 border-l-2 border-gray-300 mb-4">
                 <div className="font-medium mb-1">Command:</div>
