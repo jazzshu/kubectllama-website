@@ -9,14 +9,14 @@ const Installation = () => {
   const installationMethods = [
     {
       id: 'go',
-      title: 'Using Go',
-      command: 'go install github.com/jazzshu/kubectllama@latest',
+      title: 'From source',
+      command: 'git clone https://github.com/JasonShuyinta/kubectllama.git \ncd kubectllama && go build -o kubectllama . \nsudo mv kubectllama /usr/local/bin \nchmod +x /usr/local/bin/kubectllama',
       description: 'Install directly using Go if you have Go installed on your system.'
     },
     {
       id: 'source',
-      title: 'From Source',
-      command: 'git clone https://github.com/jazzshu/kubectllama.git\ncd kubectllama\ngo build -o kubectllama main.go\nsudo mv kubectllama /usr/local/bin/',
+      title: 'Install executables',
+      command: 'curl -L -o kubectllama n\https://github.com/JasonShuyinta/kubectllama/releases/latest/download/kubectllama-linux-amd64 \nchmod +x kubectllama \nsudo mv kubectllama /usr/local/bin/',
       description: 'Clone the repository and build from source for the latest version.'
     }
   ];
